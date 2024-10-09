@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>PHOTO BOOK</title>
+  <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header id="header">
+      <h1 class="site-title"><a href="index.html"><img src="img/logo.svg" alt="PHOTO BOOK"></a></h1>
+    </header>
+  
+    <main>
+      <div id="mainvisual">
+        <img src="img/mainvisual.jpg" alt="">
+      </div>
+  
+      <section id="index">
+        <!-- h2とol liはdivで囲む -->
+        <div class="inner">
+          <h2 class="section-title">INDEX</h2>
+        <ol class="index-list">
+          <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
+          <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
+          <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
+          <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
+          <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
+        </ol>
+        </div>
+      </section> 
+        
+  
+      <section id="detail">
+        <div class="inner">
+          <h2 class="section-title">DETAIL</h2>
+        <div class="content">
+          <img class="img" src="img/detail.jpg" alt="">
+          <div class="text">
+          <p class="title">タイトルタイトルタイトル</p>
+          <!-- ul li ではなくdlでdt dd を囲む
+          <ul>
+            <li>著者　　タイトルタイトルタイトル</li>
+            <li>出版社　タイトルタイトルタイトル</li>
+            <li>発行年　タイトルタイトルタイトル</li>
+          </ul>
+          -->
+          <!-- <dl> は説明リスト、
+          この要素は、一連の用語（<dt> 要素を使用して指定）と説明（<dd> 要素によって提供）をリスト化したもの -->
+          <dl>
+            <dt>著者</dt>
+            <dd>タイトルタイトルタイトル</dd>
+            <dt>出版社</dt>
+            <dd>タイトルタイトルタイトル</dd>
+            <dt>発行年</dt>
+            <dd>タイトルタイトルタイトル</dd>
+          </dl>
+          <p>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
+          <!-- <p>オンラインストアで見る</p> -->
+          <!-- rel属性にnoopenerを付けることで、新しいタブを別スレッドで開くことができる。 -->
+          <!-- rel属性にnoreferrerを付けることで、参照先に対して参照元のリンクを渡さないようにすることができます。
+         （電話で例えると非通知電話みたいなもの。）
+          参照元リンク情報を渡さないことで、渡したくない情報（ユーザーIDなど）がURLリンクに含まれていても大丈夫 -->
+          <a class="link" href="#" target="_blank" rel="noopener noreferrer">オンラインストアで見る</a>
+          </div>
+        </div>
+        </div>
+      </section>
+        
+    </main>
+  
+    <footer id="footer">
+      <p class="inner">&copy; 2020 PHOTO BOOK</p>
+    </footer>
+  </div>
+
+  
+</body>
+</html>
